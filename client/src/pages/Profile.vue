@@ -7,7 +7,7 @@ const router = useRouter();
 
 const profileData = ref(null);
 const loading = ref(false);
-const error = ref(null);
+const error = ref<string | null>(null);
 const token = localStorage.getItem(TOKEN_KEY);
 
 const getProfile = async () => {
